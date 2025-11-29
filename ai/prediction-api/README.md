@@ -1,6 +1,6 @@
 # PMIP Prediction API (FastAPI)
 
-- Installation: `pip install -r requirements.txt`
+- Installation: `py -m pip install -r requirements.txt`
 - Lancement: `python app.py` -> http://localhost:8000
 
 Endpoints:
