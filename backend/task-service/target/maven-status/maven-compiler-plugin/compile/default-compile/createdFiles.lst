@@ -1,0 +1,6 @@
+com\pmip\task\config\WebSocketConfig.class
+com\pmip\task\controller\TaskController.class
+com\pmip\task\config\KafkaConfig.class
+com\pmip\task\model\Task.class
+com\pmip\task\repo\TaskRepository.class
+com\pmip\task\TaskServiceApplication.class

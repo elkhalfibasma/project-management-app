@@ -1,0 +1,25 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pmip
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+app:
+  jwt:
+    secret: dev-secret-change-me-please-very-secret
+    expiration-minutes: 1440
+
+logging:
+  level:
+    org.springframework.security: INFO
+    org.hibernate.SQL: INFO

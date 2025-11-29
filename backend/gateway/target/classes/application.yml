@@ -1,0 +1,38 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      routes:
+        - id: auth
+          uri: http://localhost:8081
+          predicates:
+            - Path=/auth/**
+        - id: users
+          uri: http://localhost:8082
+          predicates:
+            - Path=/users/**
+        - id: projects
+          uri: http://localhost:8083
+          predicates:
+            - Path=/projects/**
+        - id: tasks
+          uri: http://localhost:8084
+          predicates:
+            - Path=/tasks/**
+        - id: reports
+          uri: http://localhost:8085
+          predicates:
+            - Path=/reports/**
+        - id: ai
+          uri: http://localhost:8086
+          predicates:
+            - Path=/ai/**

@@ -1,0 +1,7 @@
+com\pmip\report\model\Project.class
+com\pmip\report\config\SecurityConfig.class
+com\pmip\report\model\Task.class
+com\pmip\report\repo\ProjectRepository.class
+com\pmip\report\repo\TaskRepository.class
+com\pmip\report\controller\ReportController.class
+com\pmip\report\ReportServiceApplication.class

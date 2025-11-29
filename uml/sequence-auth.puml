@@ -1,0 +1,16 @@
+@startuml
+actor Utilisateur as U
+participant UI as interface
+participant Auth as ctrAuth
+database DB as Entity
+
+U -> UI: Saisie identifiant/mot de passe
+UI -> Auth: Vérification des champs
+Auth -> DB: Vérification identité
+DB --> Auth: Résultat
+alt Echec
+  Auth --> UI: Erreur d'authentification
+else
+  Auth --> UI: Affichage page Home
+end
+@enduml

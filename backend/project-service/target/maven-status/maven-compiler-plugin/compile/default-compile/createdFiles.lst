@@ -1,0 +1,7 @@
+com\pmip\project\config\KafkaConfig.class
+com\pmip\project\messaging\ProjectEventProducer.class
+com\pmip\project\model\Project.class
+com\pmip\project\ProjectServiceApplication.class
+com\pmip\project\repo\ProjectRepository.class
+com\pmip\project\config\SecurityConfig.class
+com\pmip\project\controller\ProjectController.class

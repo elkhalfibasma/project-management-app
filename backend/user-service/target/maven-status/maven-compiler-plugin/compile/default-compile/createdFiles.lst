@@ -1,0 +1,6 @@
+com\pmip\user\config\SecurityConfig.class
+com\pmip\user\config\KafkaConfig.class
+com\pmip\user\model\User.class
+com\pmip\user\repo\UserRepository.class
+com\pmip\user\UserServiceApplication.class
+com\pmip\user\controller\UserController.class

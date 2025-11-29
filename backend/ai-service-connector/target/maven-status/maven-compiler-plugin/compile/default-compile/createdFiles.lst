@@ -1,0 +1,12 @@
+com\pmip\ai\controller\AiController.class
+com\pmip\ai\dto\AiDtos$PerformanceOut.class
+com\pmip\ai\repo\ProjectRepository.class
+com\pmip\ai\dto\AiDtos$ProjectInput.class
+com\pmip\ai\AIServiceConnectorApplication.class
+com\pmip\ai\dto\AiDtos$PredictionOut.class
+com\pmip\ai\dto\AiDtos.class
+com\pmip\ai\dto\AiDtos$RecommendOut.class
+com\pmip\ai\model\Project.class
+com\pmip\ai\model\AiPrediction.class
+com\pmip\ai\config\RestConfig.class
+com\pmip\ai\repo\AiPredictionRepository.class

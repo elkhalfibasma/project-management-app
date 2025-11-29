@@ -1,0 +1,31 @@
+<div *ngIf="project" class="space-y-4">
+  <h2 class="text-2xl">{{project.title}} <span class="text-sm text-slate-300">({{project.progress}}%)</span></h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="bg-white/10 p-4 rounded">
+      <h3>Détails</h3>
+      <p>Status: {{project.status}}</p>
+      <p>Budget: {{project.budget}}</p>
+    </div>
+    <div class="bg-white/10 p-4 rounded">
+      <h3>Prédiction retard</h3>
+      <div *ngIf="prediction">Retard: {{prediction.predicted_delay_days}} j ({{prediction.confidence*100 | number:'1.0-0'}}%)</div>
+    </div>
+    <div class="bg-white/10 p-4 rounded">
+      <h3>Recommandations</h3>
+      <ul>
+        <li *ngFor="let a of recs">• {{a}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bg-white/10 p-4 rounded">
+    <h3>Tâches</h3>
+    <table class="w-full text-left">
+      <tr><th>Titre</th><th>Statut</th><th>Priorité</th></tr>
+      <tr *ngFor="let t of tasks" class="border-t border-white/10">
+        <td>{{t.title}}</td>
+        <td>{{t.status}}</td>
+        <td>{{t.priority}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

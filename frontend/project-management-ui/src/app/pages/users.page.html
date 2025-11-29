@@ -1,0 +1,6 @@
+<table class="w-full text-left">
+  <tr><th>Nom</th><th>Email</th><th>Rôle</th></tr>
+  <tr *ngFor="let u of list" class="border-t border-white/10">
+    <td>{{u.name}}</td><td>{{u.email}}</td><td>{{u.role}}</td>
+  </tr>
+</table>

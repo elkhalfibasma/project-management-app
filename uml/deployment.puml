@@ -1,0 +1,36 @@
+@startuml
+node "Client" {
+  component "Angular UI" as UI
+}
+node "Machine locale" {
+  node "Spring Boot" {
+    [gateway:8080]
+    [auth:8081]
+    [user:8082]
+    [project:8083]
+    [task:8084]
+    [report:8085]
+    [ai-connector:8086]
+  }
+  node "Python" {
+    [FastAPI 8000]
+  }
+  database "PostgreSQL" as DB
+  node "Kafka" as K
+}
+UI --> gateway: HTTP
+[gateway:8080] --> [auth:8081]
+[gateway:8080] --> [user:8082]
+[gateway:8080] --> [project:8083]
+[gateway:8080] --> [task:8084]
+[gateway:8080] --> [report:8085]
+[ai-connector:8086] --> [FastAPI 8000]
+[auth:8081] --> DB
+[user:8082] --> DB
+[project:8083] --> DB
+[task:8084] --> DB
+[report:8085] --> DB
+[project:8083] --> K
+[task:8084] --> K
+[user:8082] --> K
+@enduml

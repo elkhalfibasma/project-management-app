@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="!bg-cyan-500">
+  <span>PMIP</span>
+  <span class="flex-1"></span>
+  <button mat-button *ngIf="auth.isLoggedIn()" (click)="logout()">Logout</button>
+</mat-toolbar>
+<div class="flex">
+  <mat-sidenav-container class="w-64 h-[calc(100vh-64px)] bg-slate-800 text-white" *ngIf="auth.isLoggedIn()">
+    <mat-sidenav mode="side" opened>
+      <a routerLink="/" class="block p-3">Dashboard</a>
+      <a routerLink="/projects" class="block p-3">Projets</a>
+      <a routerLink="/tasks" class="block p-3">Tâches</a>
+      <a routerLink="/users" class="block p-3">Utilisateurs</a>
+    </mat-sidenav>
+  </mat-sidenav-container>
+  <div class="p-6 w-full">
+    <router-outlet></router-outlet>
+  </div>
+</div>

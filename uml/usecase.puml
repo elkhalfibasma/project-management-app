@@ -1,0 +1,48 @@
+@startuml
+left to right direction
+actor Admin as A
+actor "Chef de projet" as CP
+actor "Membre d'équipe" as M
+actor "Système IA" as AI
+
+rectangle "Système gestion des projets" {
+  usecase "se connecter" as UC_Login
+  usecase "gérer les projets" as UC_Project
+  usecase "créer projet" as UC_ProjectCreate
+  usecase "modifier projet" as UC_ProjectEdit
+  usecase "supprimer projet" as UC_ProjectDelete
+  usecase "gérer tache" as UC_Task
+  usecase "assigner tache" as UC_TaskAssign
+  usecase "mettre à jour tache" as UC_TaskUpdate
+  usecase "générer rapport" as UC_Report
+  usecase "exporter données" as UC_Export
+  usecase "gérer les utilisateurs" as UC_User
+  usecase "recommander des stratégies" as UC_Rec
+  usecase "consulter prédiction IA" as UC_Pred
+  usecase "suivre avancement" as UC_Progress
+  usecase "synchroniser temps réel" as UC_Realtime
+}
+
+A --> UC_Login
+A --> UC_User
+A --> UC_Report
+A --> UC_Export
+CP --> UC_Project
+CP --> UC_Task
+CP --> UC_TaskAssign
+CP --> UC_TaskUpdate
+CP --> UC_Report
+CP --> UC_Pred
+M --> UC_Progress
+M --> UC_Realtime
+
+UC_Task ..> UC_Pred : <<include>>
+UC_Report ..> UC_Export : <<include>>
+UC_ProjectCreate .u.> UC_Project : <<extend>>
+UC_ProjectEdit .u.> UC_Project : <<extend>>
+UC_ProjectDelete .u.> UC_Project : <<extend>>
+UC_TaskAssign .u.> UC_Task : <<extend>>
+UC_TaskUpdate .u.> UC_Task : <<extend>>
+UC_Pred --> AI
+UC_Rec --> AI
+@enduml

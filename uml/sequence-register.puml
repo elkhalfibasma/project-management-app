@@ -1,0 +1,16 @@
+@startuml
+actor User
+participant UI as "interface"
+participant Auth as "ctrAuth"
+database DB as "Entity"
+
+User -> UI : Demande d'inscription()
+UI -> Auth : Vérification()
+Auth -> DB : Vérification email unique
+DB --> Auth : Résultat
+alt Email unique
+  Auth --> UI : Inscription réussie
+else
+  Auth --> UI : Inscription échouée
+end
+@enduml

@@ -1,0 +1,41 @@
+@startuml
+class User {
+  +id: int
+  +name: String
+  +email: String
+  +password: String
+  +role: Role
+  +createdAt: LocalDateTime
+}
+
+enum Role { ADMIN; CHEF_PROJET; MEMBRE }
+
+class Project {
+  +id: int
+  +title: String
+  +description: String
+  +budget: Double
+  +startDate: LocalDate
+  +endDate: LocalDate
+  +status: String
+  +progress: int
+}
+
+class Task {
+  +id: int
+  +title: String
+  +description: String
+  +priority: String
+  +status: String
+  +estimatedDuration: int
+  +dueDate: LocalDate
+}
+
+class Report { +id:int +data: JSON +createdAt: LocalDateTime }
+class Prediction { +id:int +type:String +value: JSON +createdAt: LocalDateTime }
+
+User "1" -- "*" Project : manager
+Project "1" -- "*" Task
+Project "1" -- "*" Report
+Project "1" -- "*" Prediction
+@enduml

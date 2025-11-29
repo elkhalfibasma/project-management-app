@@ -1,0 +1,6 @@
+<table class="w-full text-left">
+  <tr><th>Projet</th><th>Titre</th><th>Statut</th><th>Assigné</th></tr>
+  <tr *ngFor="let t of list" class="border-t border-white/10">
+    <td>{{t.projectId}}</td><td>{{t.title}}</td><td>{{t.status}}</td><td>{{t.assigneeId}}</td>
+  </tr>
+</table>

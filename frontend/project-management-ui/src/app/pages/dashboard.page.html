@@ -1,0 +1,17 @@
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div class="bg-white/10 rounded p-4">
+    <h3 class="text-lg mb-2">KPI Tâches</h3>
+    <canvas #kpiChart></canvas>
+  </div>
+  <div class="bg-white/10 rounded p-4 col-span-2">
+    <h3 class="text-lg">Projets récents</h3>
+    <table class="w-full text-left mt-2">
+      <tr><th>Titre</th><th>Statut</th><th>Progress</th></tr>
+      <tr *ngFor="let p of projects" class="border-t border-white/10">
+        <td><a [routerLink]="['/projects', p.id]" class="text-cyan-300 hover:underline">{{p.title}}</a></td>
+        <td>{{p.status}}</td>
+        <td>{{p.progress}}%</td>
+      </tr>
+    </table>
+  </div>
+</div>
