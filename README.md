@@ -1,7 +1,4 @@
 # ProjectManagementIntelligencePlatform (PMIP)
-
-Exécution locale sans Docker ni CI/CD. Architecture microservices Spring Boot + Angular + Kafka + PostgreSQL + IA FastAPI.
-
 ## Arborescence
 - backend/ (gateway, auth-service, user-service, project-service, task-service, report-service, ai-service-connector)
 - frontend/project-management-ui (Angular)

@@ -1,8 +1,8 @@
-C:\Users\user\CascadeProjects\ProjectManagementIntelligencePlatform\backend\ai-service-connector\src\main\java\com\pmip\ai\AIServiceConnectorApplication.java
-C:\Users\user\CascadeProjects\ProjectManagementIntelligencePlatform\backend\ai-service-connector\src\main\java\com\pmip\ai\config\RestConfig.java
-C:\Users\user\CascadeProjects\ProjectManagementIntelligencePlatform\backend\ai-service-connector\src\main\java\com\pmip\ai\controller\AiController.java
-C:\Users\user\CascadeProjects\ProjectManagementIntelligencePlatform\backend\ai-service-connector\src\main\java\com\pmip\ai\dto\AiDtos.java
-C:\Users\user\CascadeProjects\ProjectManagementIntelligencePlatform\backend\ai-service-connector\src\main\java\com\pmip\ai\model\AiPrediction.java
-C:\Users\user\CascadeProjects\ProjectManagementIntelligencePlatform\backend\ai-service-connector\src\main\java\com\pmip\ai\model\Project.java
-C:\Users\user\CascadeProjects\ProjectManagementIntelligencePlatform\backend\ai-service-connector\src\main\java\com\pmip\ai\repo\AiPredictionRepository.java
-C:\Users\user\CascadeProjects\ProjectManagementIntelligencePlatform\backend\ai-service-connector\src\main\java\com\pmip\ai\repo\ProjectRepository.java
+C:\Users\user\project-management-app\backend\ai-service-connector\src\main\java\com\pmip\ai\AIServiceConnectorApplication.java
+C:\Users\user\project-management-app\backend\ai-service-connector\src\main\java\com\pmip\ai\config\RestConfig.java
+C:\Users\user\project-management-app\backend\ai-service-connector\src\main\java\com\pmip\ai\controller\AiController.java
+C:\Users\user\project-management-app\backend\ai-service-connector\src\main\java\com\pmip\ai\dto\AiDtos.java
+C:\Users\user\project-management-app\backend\ai-service-connector\src\main\java\com\pmip\ai\model\AiPrediction.java
+C:\Users\user\project-management-app\backend\ai-service-connector\src\main\java\com\pmip\ai\model\Project.java
+C:\Users\user\project-management-app\backend\ai-service-connector\src\main\java\com\pmip\ai\repo\AiPredictionRepository.java
+C:\Users\user\project-management-app\backend\ai-service-connector\src\main\java\com\pmip\ai\repo\ProjectRepository.java
